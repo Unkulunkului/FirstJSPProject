@@ -9,14 +9,10 @@ public class InMemoryStorage {
     private static List<User> userList = new ArrayList<>();
     private static int id = 0;
 
-    public InMemoryStorage(){
-        id++;
-    }
-
 
     public boolean saveUser(User user){
         if(!userList.contains(user)){
-            user.setId(id);
+            user.setId(id++);
             userList.add(user);
             return true;
         }else{
