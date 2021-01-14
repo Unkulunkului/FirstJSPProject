@@ -19,8 +19,6 @@
 </form>
 <a href = "/">Return to home page</a>
 <br>
-<p>${requestScope.name}
-</p>
 <p style="color: coral">${requestScope.wrongRes}</p>
 <p style="color: coral">${requestScope.wrongLogin}</p>
 <p style="color: coral">${requestScope.wrongName}</p>

@@ -17,7 +17,7 @@ public class InfoAboutUsersServlet extends HttpServlet {
         InMemoryStorage inMemoryStorage = new InMemoryStorage();
         String str = "";
         for (User user : inMemoryStorage.getUserList()) {
-            str+=user.toString()+"<br>";
+            str+=user.toString()+"<br>";   //?
         }
         req.setAttribute("list",str);
         req.getServletContext().getRequestDispatcher("/pages/info.jsp").forward(req,resp);

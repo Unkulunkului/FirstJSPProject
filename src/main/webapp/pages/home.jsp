@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>Home</title>
-    <h3> Welcome, ${requestScope.name}!!!</h3>
+    <h3> Home page</h3>
+    <h4> Welcome, ${requestScope.name}!!!</h4>
 </head>
 <body>
-<br>
 <a href = "/authorization">Authorization</a>
 <br>
 <a href = "/registration">Registration</a>
